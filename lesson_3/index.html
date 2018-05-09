@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>模板语法</title>
+    <script src="../vue.js"></script>
+    <style>
+            #pull-right{
+                color: red;
+            }
+    </style>
+</head>
+
+<body>
+    <!-- ###插值### -->
+    <h1>插值</h1>
+    <h3>#文本</h3>
+    <div id="app">
+        <span>Message:{{msg}}</span>
+        <br>
+        <span v-once>这个不会改变:{{msg}}</span>
+        <h3>#原始HTML</h3>
+        <p>using mustaches:{{rawHtml}}</p>
+        <p>using v-html directive: <span v-html="rawHtml"></span></p>
+        <h3>#特性</h3>
+        <p v-bind:id='attrId'>绑定ID的元素</p>
+        <button v-bind:disabled="isButtonDisabled">按钮</button>
+    </div>
+    <!-- ***插值*** -->
+</body>
+<script src="index.js"></script>
+
+</html>
+<!-- ###title### -->
+<!-- ***title*** -->
