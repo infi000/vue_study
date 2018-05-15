@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>计算属性和观察者</title>
+    <script src="../vue.js"></script>
+</head>
+
+<body>
+<!-- ###计算属性VS方法### -->
+<h1>计算属性VS方法</h1>
+<div id="app">
+
+    <p>原始message:"{{message}}"</p>
+    <p>计算属性 computed reversed message:"{{reversedMessage}}"</p>
+    <p>方法 fun_reversedMessage():"{{fun_reversedMessage()}}"</p>
+</div>
+<!-- ***计算属性VS方法*** -->
+<!-- ###计算属性VS侦听属性### -->
+<h1>计算属性VS侦听属性</h1>
+<div id="app-2">
+    <p>{{w_fullName}}</p>
+    <p>{{c_fullName}}</p>
+
+</div>
+<!-- ***计算属性VS侦听属性*** -->
+<!-- ###计算属性的SETTER### -->
+<h1>计算属性的SETTER</h1>
+<div id="app-3">
+    <p>fullName:{{fullName}}</p>
+</div>
+<!-- ***计算属性的SETTER*** -->
+<!-- ###侦听器### -->
+<div id="app-4">
+    <p>ask a yes/no question:</p>
+    <input type="text" v-model="question">
+
+    <p>{{answer}}</p>
+</div>
+<!-- ***侦听器*** -->
+</body>
+<script src="index.js"></script>
+</html>
+<!-- ###title### -->
+<!-- ***title*** -->

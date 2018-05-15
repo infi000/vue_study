@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>列表渲染</title>
+    <script src="../vue.js"></script>
+</head>
+
+<body>
+    <!-- ###用 v-for 把一个数组对应为一组元素### -->
+    <div id="app">
+        <h1>用 v-for 把一个数组对应为一组元素</h1>
+        <ul>
+            <li v-for="(item,index) in items">{{index}}{{item.message}}---</li>
+        </ul>
+        <ul>
+            <li v-for="(value,key,index) in object">{{index}}--{{key}}::{{value}}</li>
+        </ul>
+    </div>
+    <!-- ***用 v-for 把一个数组对应为一组元素*** -->
+
+
+    <!-- ###数组更新检测### -->
+<!-- <h1>数组更新检测</h1> -->
+<!-- ***数组更新检测*** -->
+</body>
+<script src="index.js"></script>
+
+</html>
+<!-- ###title### -->
+<!-- <h1></h1> -->
+<!-- ***title*** -->

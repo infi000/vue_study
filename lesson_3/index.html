@@ -6,9 +6,9 @@
     <title>模板语法</title>
     <script src="../vue.js"></script>
     <style>
-            #pull-right{
-                color: red;
-            }
+    #pull-right {
+        color: red;
+    }
     </style>
 </head>
 
@@ -26,6 +26,11 @@
         <h3>#特性</h3>
         <p v-bind:id='attrId'>绑定ID的元素</p>
         <button v-bind:disabled="isButtonDisabled">按钮</button>
+        <h3>使用js表达式</h3>
+        <p>{{number+1}}</p>
+        <p>{{ok?'YES':'NO'}}</p>
+        {{message.split('').reverse().join('')}}
+        <div v-bind:id="'list-'+id"></div>
     </div>
     <!-- ***插值*** -->
 </body>

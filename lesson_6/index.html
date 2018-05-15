@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>条件渲染</title>
+    <script src="../vue.js"></script>
+</head>
+
+<body>
+    <!-- ###v-if### -->
+    <h1>v-if</h1>
+    <div id="app">
+        <template v-if="ok">
+            <p>Paragraph 1</p>
+            <p>Paragraph 2</p>
+        </template>
+        <div v-if="Math.random()>0.5">
+            now you see me </div>
+        <div v-else>now you dont</div>
+ 
+    <h2>用key 管理可复用的元素</h2>
+    <template v-if="loginType == true">
+        <label>Username</label>
+        <input placeholder="Enter your username" key="2">
+    </template>
+    <template v-else>
+        <label>Email</label>
+        <input placeholder="Enter your email address" key="1">
+    </template>
+    <button @click="loginType=!loginType">change</button>
+       </div>
+    <!-- ***v-if*** -->
+</body>
+<script src="index.js"></script>
+
+</html>
+<!-- ###title### -->
+<!-- <h1></h1> -->
+<!-- ***title*** -->
